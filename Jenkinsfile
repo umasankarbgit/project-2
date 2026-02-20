@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TARGET_HOST = '15.207.116.230'        // Replace with your EC2 IP
+        TARGET_HOST = '52.66.66.251'        // Replace with your EC2 IP
         SSH_USER = 'ec2-user'
         SSH_CREDENTIALS_ID = 'ssh-access-key'     // Jenkins SSH credential ID
         REMOTE_DIR = '/home/ec2-user/project-2'
@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/chinabudhi123/project-2.git'
+                git branch: 'main', url: 'https://github.com/umasankarbgit/project-2.git'
             }
         }
 
